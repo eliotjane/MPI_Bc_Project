@@ -24,7 +24,7 @@ make install
 
 (Note: Sometimes the TupleTool will not work. If the error "TupleToolPVTrackInfo:: get():: No valid data at 'Rec/Vertex/PrimaryVertices'   StatusCode=FAILURE" appears it can be solved by commenting out the "m_pv_location" and then also the "declareProperty" line relating to the PV. Replace these with:
 
-declareProperty( "PVsLocation", m_pv_location = LHCb::RecVertexLocation::Primary, "PV location to be used." );\
+declareProperty( "PVsLocation", m_pv_location = LHCb::RecVertexLocation::Primary, "PV location to be used." );
 
 which solves the issue.)
 
