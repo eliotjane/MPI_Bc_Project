@@ -63,6 +63,8 @@ h_DPS_noCR->GetYaxis()->SetTitle("#scale[0.6]{#frac{d#sigma(B_{c}^{+})}{dN}}/#sc
 //h_DPS_noCR->GetXaxis()->SetTicks("+");
 //h_DPS_noCR->GetXaxis()->SetRangeUser(0., 80.);
 
+TAxis *yaxis = h2->GetYaxis();
+yaxis->Print();
 
 
 //Int_t bin = h_DPS_noCR->GetBin(1;4);
